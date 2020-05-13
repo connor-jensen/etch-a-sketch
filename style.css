@@ -1,0 +1,44 @@
+html {
+   background: url(https://www.jack969.com/wp-content/uploads/sites/13/2017/02/Etch-a-Sketch-Toy-Story.png);
+   background-size: cover;
+}
+
+body {
+   /* display: flex; */
+   /* justify-content: center; */
+   /* align-items: center; */
+}
+
+.test {
+   width: 29vw;
+   height: 23.5vw;
+   position: absolute;
+   display: block;
+   left: 42.5%;
+   top: 17%;
+   perspective: 50em;
+}
+
+.container {
+   display: grid;
+   grid-template-rows: repeat(16, auto);
+   grid-template-columns: repeat(24, auto);
+   border-radius: 0px;
+   height: 100%;
+   width: 100%;
+   transform: 
+      rotateX(3deg)
+      rotateY(-8deg)
+      rotateZ(6deg)
+      skewY(-4.4deg)
+   /* transform: rotate3d(30deg, 0deg, 0deg); */
+   /* transform: scale3d(-30deg, 10deg, 0deg); */
+}
+
+.pixel {
+   grid-column-start: auto;
+   grid-column-end: auto;
+   grid-row-start: auto;
+   grid-row-end: auto;
+   background-color: #735F5F;
+}
